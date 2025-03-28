@@ -4,9 +4,9 @@ export default function UnderwritingTool() {
   const [purchasePrice, setPurchasePrice] = useState(0);
   const [monthlyRent, setMonthlyRent] = useState(0);
   const [monthlyExpenses, setMonthlyExpenses] = useState(0);
-  const [downPaymentPercent, setDownPaymentPercent] = useState(20);
-  const [interestRate, setInterestRate] = useState(6.5);
-  const [loanTerm, setLoanTerm] = useState(30);
+  const [downPaymentPercent, setDownPaymentPercent] = useState(0);
+  const [interestRate, setInterestRate] = useState(0);
+  const [loanTerm, setLoanTerm] = useState(0);
 
   const downPayment = (purchasePrice * downPaymentPercent) / 100;
   const loanAmount = purchasePrice - downPayment;
